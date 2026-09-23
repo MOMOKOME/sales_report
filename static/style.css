@@ -1,0 +1,32 @@
+:root { color-scheme: light; font-family: "Yu Gothic UI", "Meiryo", sans-serif; color: #19312d; background: #f3f7f5; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { width: min(920px, calc(100% - 32px)); margin: 48px auto; }
+header { margin-bottom: 28px; }
+h1 { margin: 4px 0 8px; font-size: clamp(2rem, 5vw, 2.7rem); }
+h2 { margin: 0 0 16px; font-size: 1.15rem; }
+.eyebrow { color: #18856f; font-size: .75rem; font-weight: 800; letter-spacing: .14em; }
+.card, .metric { background: white; border: 1px solid #e0eae5; border-radius: 14px; box-shadow: 0 8px 28px #2344370a; }
+.card { padding: 24px; margin: 20px 0; }
+.card p, header p { color: #61746c; line-height: 1.6; }
+form { display: grid; gap: 12px; max-width: 480px; margin-top: 20px; }
+input[type=file] { padding: 12px; border: 1px solid #cbd9d2; border-radius: 8px; background: #fbfdfc; }
+button, .button { display: inline-block; border: 0; border-radius: 8px; padding: 12px 18px; color: white; background: #147b66; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+button:hover, .button:hover { background: #0e604f; }
+.notice { margin: 16px 0; padding: 14px 16px; border-radius: 8px; }
+.notice.error { color: #8a2f28; background: #fff0ed; border: 1px solid #f1c8c1; }
+.summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.metric { display: grid; gap: 8px; padding: 20px; }
+.metric span, .section-heading span { color: #61746c; font-size: .9rem; }
+.metric strong { font-size: clamp(1.25rem, 3vw, 1.8rem); }
+.section-heading { display: flex; justify-content: space-between; align-items: center; }
+.section-heading h2 { margin-bottom: 0; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 12px 10px; border-bottom: 1px solid #e7eeea; }
+th { color: #61746c; font-size: .85rem; }
+td:not(:first-child), th:not(:first-child) { text-align: right; }
+.empty { padding: 12px 0; }
+.actions { display: flex; align-items: center; gap: 22px; margin: 28px 0; flex-wrap: wrap; }
+.text-link { color: #147b66; }
+@media (max-width: 600px) { .container { margin: 28px auto; } .summary-grid { grid-template-columns: 1fr; gap: 10px; } .metric { padding: 16px; } .card { padding: 18px; } }
